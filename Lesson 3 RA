@@ -1,7 +1,7 @@
 ## READING ASSIGNMENTS FOR LESSON 3
 # Networks, Packets and Protocols: 
 Hosts are computers that run applications such as your Web browser. Routers are machines whose job is to relay, or forward, information from one communication channel to another. A few hosts connect to a router, which connects to other routers
- 
+# Survey App 
 A protocol is an agreement about the packets exchanged by communicating programs and what they mean. The main protocols in the TCP/IP suite are the Internet Protocol (IP), the Transmission Control Protocol (TCP), and the User Datagram Protocol (UDP).
 In TCP/IP, the bottom layer consists of the underlying communication channels. Those channels are used by the network layer, which deals with the problem of forwarding packets toward their destination. 
 The layer above IP is called the transport layer. It offers a choice between two protocols: TCP and UDP. Each builds on the service provided by IP, but they do so in different ways to provide different kinds of transport, which are used by application protocols with different needs. Both TCP and UDP use addresses, called port numbers, to identify applications within hosts.
