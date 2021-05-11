@@ -1,0 +1,9 @@
+cd C:\Users\lengu\Desktop\Distributed System\rmi\dsEx5
+
+javac -cp "C:\Users\lengu\Desktop\Distributed System\rmi\dsEx5\mysql-connector-java-8.0.23.jar" *.java
+
+start rmiregistry
+
+java -cp "C:\Users\lengu\Desktop\Distributed System\rmi\dsEx5\mysql-connector-java-8.0.23.jar;." Server
+
+java Client
