@@ -33,8 +33,8 @@ public class Server {
 				String name = doc.getElementsByTagName("name").item(0).getTextContent();
 				int age = Integer.parseInt(doc.getElementsByTagName("age").item(0).getTextContent());
 
-				Customer user = new Customer(id, name, age);
-				System.out.println(user);
+				Customer customer = new Customer(id, name, age);
+				System.out.println(customer);
 			}
 			if (socket != null)
 				socket.close();
