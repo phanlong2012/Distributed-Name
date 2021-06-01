@@ -40,10 +40,8 @@ public class Object2Doc2 {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		
-		// create a document object
 		Document doc = builder.newDocument();
 
-		// build a tree
 		
 		
 		Element bookElement = doc.createElement("book");
@@ -65,7 +63,6 @@ public class Object2Doc2 {
 		authorElement.appendChild(nameAuthor);
 		authorElement.appendChild(ageAuthor);
 		
-		// for the user element
 		bookElement.appendChild(titleElement);
 		bookElement.appendChild(publisherElement);
 		bookElement.appendChild(authorElement);
