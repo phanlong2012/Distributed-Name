@@ -72,36 +72,5 @@ public class DAO {
 		}
 	}
 	
-	public static boolean login(String username, String password) throws RemoteException {
-		//List<Media> list = new ArrayList<Media>();
-
-		boolean valid = false;
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/dsEx5";
-			Connection con = DriverManager.getConnection(url, 
-			                                             "root", 
-														 "lan123");
-
-			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from login");
-			
-			while (rs.next()) {
-				//Media s = new Newspaper(rs.getString(1), rs.getString(2));
-				//Media s = new Book(rs.getString(1), rs.getString(2));
-				//list.add(s);
-				if (rs.getString(1).equals(username) && rs.getString(2).equals(password)) {
-					valid = true;
-				}
-			}
-			
-			con.close();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-		
-		
-		return valid;
-	}
-
+	
 }
